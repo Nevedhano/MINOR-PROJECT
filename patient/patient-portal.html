@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function() {
+            // Retrieve stored details
+            const patientName = localStorage.getItem('patientName');
+            const prescription = localStorage.getItem('prescription');
+
+            // Display details
+            document.getElementById('patient-name').textContent = patientName;
+            document.getElementById('prescription').textContent = prescription;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Patient Portal</h1>
+        <button onclick="goBack()">Back</button>
+    </header>
+
+    <div>
+        <h2>Patient Details</h2>
+        <p id="patient-name"></p>
+        <p id="prescription"></p>
+    </div>
+    <div id="patient-info">
+        <!-- Patient details will be displayed here -->
+    </div>
+</body>
+</html>

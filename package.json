@@ -1,0 +1,16 @@
+{
+    "name": "main-renderer",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^31.4.0",
+        "electron-devtools-installer": "^3.2.0"
+    },
+    "scripts": {
+        "start": "electron .",
+        "dev": "electron ."
+    },
+    "dependencies": {
+        "main-renderer": "file:"
+    }
+}
